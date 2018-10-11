@@ -13,10 +13,10 @@
 2. Stworzenie coś w rodzaju "gry z elementami edukacji" - pod warunkiem, że uda się wykonać punkt 1 w "Celach projektu"
 
 ### Autor projektu: Piotr Krupa 
-*Kierunek: ISSP
-*Rok: II
-*Wydział: Fizyka i Astronomia
-*Uniwersytet Wrocławski
+#### Kierunek: ISSP
+#### Rok: II
+#### Wydział: Fizyka i Astronomia
+#### Uniwersytet Wrocławski
 
 
 
