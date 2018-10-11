@@ -1,5 +1,5 @@
-# Platformer2d/SFML
-## Zadanie: Stworzenie gry Platformowej w grafice 2D
+# Platformer2d/SFML - Piotr Krupa - Projekt C++
+## Zadanie: Stworzenie gry Platformowej 2D w grafice 2D
 ### Cele w projekcie:
 1.Stworzenie podstawy (system poruszania się, przeciwników, bohatera, sterowanie,itd.)
 2.W przypadku wykonania punktu 1, wprowadzić własne pomysły (np. zagadki logiczne powiązane z tematyką kierunku - między innymi fizyka).
