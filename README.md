@@ -1,2 +1,3 @@
 # Platformer2d/SFML
-# * 3 Zadanie
+# Zadanie: Stworzenie gry Platformowej w grafice 2D, przy wykorzystaniu języka (C/C++) oraz biblioteki SFML
+
