@@ -1,1 +1,2 @@
-# Piotr_Krupa_Projekt_C
+# Platformer2d/SFML
+
