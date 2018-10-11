@@ -1,2 +1,2 @@
 # Platformer2d/SFML
-*LISTA
+# * 3 Zadanie
