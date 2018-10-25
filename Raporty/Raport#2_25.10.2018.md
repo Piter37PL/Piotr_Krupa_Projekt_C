@@ -10,7 +10,7 @@ I. Udało mi się rozwiązać problem z biblioteką SFML. Otóż zadecydowałem 
    - Dobór odpowiedniej wersji biblioteki SFML
    
    Zdecydowałem, że swój projekt będe wykonywał na systemie Ubuntu (Linux) ze względu na prostotę (w konfiguracji oraz tworzenia
-   plików). Początkowe chciałem zainstalować subsystem Ubuntu na Windows 10, by pliki z projektem posiadać na Windowsie zaś kompilacja        miałaby się odbywać w terminalu Ubuntu. Problem polegał na tym, że pomimo instalacji windows Xserver - vcxsrv po stronie Windowsa 10      oraz modyfikacji pliku bashrc po stronie Ubuntu subsystem uruchamianie i testowanie napisanego kodu mogło być problematyczne 
+   plików). Początkowo chciałem zainstalować subsystem Ubuntu na Windows 10, by pliki z projektem posiadać na Windowsie zaś kompilacja      miałaby się odbywać w terminalu Ubuntu. Problem polegał na tym, że pomimo instalacji windows Xserver vcxsrv po stronie Windowsa10        oraz modyfikacji pliku bashrc po stronie Ubuntu subsystem uruchamianie i testowanie napisanego kodu mogło być problematyczne 
    (Testy klawiszy, przycisków myszy).
    
    Więc za najlepsze rozwiązanie uznałem zainstalowanie obok Windowsa 10 system Ubuntu. Następnie wystarczyło wykorzystując terminal
@@ -228,7 +228,6 @@ int main()
    
    Niestety z powodu problemów z Code::Blocksem to narazie tyle co mogę pokazać i na dobrą sprawę dopiero teraz zaczyna się moja praca
    nad projektem.
-   
-   #### Co zamierzam wykonać do następnego tygodnia:
-   I.Rozpocząć wprowadzać elementy postaci, wrogów, przeciwników .
-   II. Zapoznanie się z wprowadzeniem animacji do postaci, grawitacji do skoków, poruszania się itd.
+#### Co zamierzam wykonać do następnego tygodnia:
+ +  Rozpocząć wprowadzać elementy postaci, wrogów, plansz,
++   Zapoznanie się z wprowadzeniem animacji do postaci, grawitacji do skoków, poruszania się itd.
