@@ -38,7 +38,11 @@
  
 #### Co zamierzam wykonać do następnego tygodnia:
   I. Wprowadzenie pierwszej/pierwszych platform i kolizji z Playerem
+  
+  
   II. Zastanowienie się nad skokiem postaci 
+  
+  
   III. Zastanowienie się nad Klasą Player (rysowanie postaci i animacje)
   
   Kod:
