@@ -1,8 +1,6 @@
 # ProjektC++
-## Raport #4 - 8.11.2018
+## Raport #4 - 22.11.2018
 ### Autor: Piotr Krupa ISSP rok II
-
-### W BUDOWIE!
 
 #### Co zostało do tej pory wykonane:
  I. Udało mi się cześciowo rozwiązać kwestie z umieszczeniem większość instrukcji i funkcji (sterowanie) do klasy Player.
