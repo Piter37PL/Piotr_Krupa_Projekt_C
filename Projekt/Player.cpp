@@ -10,7 +10,7 @@ Player::Player()
  right = false;
  left  = false;
  jump  = false;
- gravity = 0.05f;
+ gravity = 0.04f;
 
  //hit = false;
 }
@@ -31,16 +31,16 @@ void Player::control(sf::RenderWindow &window)
  if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left))       left = true;
  if(!(sf::Keyboard::isKeyPressed(sf::Keyboard::Left)))    left = false;
 
- if(jump_counter<1000 && sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+ if(jump_counter<800 && sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
    {
       jump = true;
       jump_counter++;
-      std::cout<<"jump_counter:"<<jump_counter<<std::endl;
+      //std::cout<<"jump_counter:"<<jump_counter<<std::endl;
    }
  else
-     {
-      jump=false;
-     }
+   {
+    jump=false;
+   }
  if(!(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)))
    {
      jump_counter=0;
@@ -60,10 +60,7 @@ void Player::update(bool right, bool left, bool jump)
   xpos += xmove;
   
   //Skok postaci   
-  if(jump){
-	ymove = 5.0f;
-        jump=false;
-  }
+  if(jump){ ymove = 5.0f; jump=false; }
   else if(!jump) ymove = -5.0f;
   ypos -= ymove*gravity;
    
