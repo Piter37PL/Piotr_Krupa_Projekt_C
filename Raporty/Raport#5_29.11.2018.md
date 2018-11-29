@@ -54,4 +54,3 @@ Pozwolę sobie na krótką charakterystykę klasy Platform:
    3. Zastanowić się nad mechaniką strzelania i wspomnianymi na koniec punktu 1 elementami.
    
    
-   
