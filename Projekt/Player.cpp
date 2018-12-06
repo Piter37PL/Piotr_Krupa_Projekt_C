@@ -2,17 +2,15 @@
 Player::Player()
 {
  //Public:
- xpos  = 0.f;
- ypos  = 480.f;
- xmove = 0.f;
- ymove = 0.f;
+ this->xpos  = 0.f;
+ this->ypos  = 480.f;
+ this->xmove = 0.f;
+ this->ymove = 0.f;
  //Private:
  right = false;
  left  = false;
  jump  = false;
  gravity = 0.04f;
-
- //hit = false;
 }
 
 

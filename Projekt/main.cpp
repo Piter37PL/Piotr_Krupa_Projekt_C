@@ -3,6 +3,8 @@
 #include "Player.cpp"
 #include "Platform.h"
 #include "Platform.cpp"
+#include "Ground.h"
+#include "Ground.cpp"
 
 int main()
 {
@@ -15,9 +17,12 @@ int main()
  texturePlayer.loadFromFile("test.png");
  sf::Sprite spritePlayer(texturePlayer);
 
- Player objPlayer;                         //obiekt Klasy Player
- Platform objPlatform(rosx,rosy);          //obiekt Klasy PLatform    
- 
+ Player objPlayer;                               //obiekt Klasy Player
+ Platform objPlatform1(100, 270, 4, 1);          //obiekt Klasy PLatform    
+ Platform objPlatform2(200, 370, 4, 1);          //obiekt Klasy PLatform    
+ Platform objPlatform3(300, 470, 4, 1);          //obiekt Klasy PLatform    
+ Ground objGround;
+
  while(window.isOpen())
       {
         sf::Event event;
@@ -49,9 +54,11 @@ int main()
           
 
           window.clear();
-
-          objPlatform.drawGround(window);
-          objPlatform.drawPlatform(window);
+          objPlatform1.drawPlatform(window);
+          objPlatform2.drawPlatform(window);
+          objPlatform3.drawPlatform(window);
+          objGround.drawGround(window);
+          
           objPlayer.control(window);
 
           window.draw(spritePlayer);

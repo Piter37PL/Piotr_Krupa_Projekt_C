@@ -8,7 +8,8 @@ class Player
   
   Player();
   ~Player();
-  
+  friend class Platform;
+
   float xpos;                                    //Pozycja w osi x
   float ypos;                                    //Pozycja w osi y
   float xmove;                                   //Prędkość w osi x

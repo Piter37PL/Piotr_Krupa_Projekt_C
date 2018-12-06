@@ -5,19 +5,24 @@
 class Platform
 {
  public:
-  Platform(int &rosx, int &rosy);                 //Pobranie od main rozdzielczości ekranu
+  Platform(int x, int y, int nx, int ny);
   ~Platform();
   
-  void drawGround(sf::RenderWindow &window);      //Metoda rysująca "podłogę" - testowa
+  Player objFplayer;
+ 
   void drawPlatform(sf::RenderWindow &window);    //Metoda rysująca platformy - testowa
+  void collisionPlatform();
 
  private:
-  sf::Texture textureBlock;                       //Tekstura bloczku
-  sf::Sprite spriteBlock;                         //Sprite bloczku
- 
+  sf::Texture textureBlock;                       //Tekstura bloczku platformy
+  sf::Sprite spritePlatform;                      //Sprite bloczku platformy
   int rosxB;                                      //rozmiar ekranu oś x
   int rosyB;                                      //rozmiar ekranu oś y
   int blocX;                                      //rozmiar bloczka oś x
   int blocY;                                      //rozmiar bloczka oś y
-  
+  int x;
+  int y;
+  int nx;
+  int ny;
+ 
 };
