@@ -1,15 +1,14 @@
 #pragma once
 #include "SFML/Graphics.hpp"
 #include <iostream>
-
+#include "Player.h"
 class Platform
 {
  public:
   Platform(int x, int y, int nx, int ny);
   ~Platform();
-  
-  Player objFplayer;
- 
+
+
   void drawPlatform(sf::RenderWindow &window);    //Metoda rysująca platformy - testowa
   void collisionPlatform();
 
@@ -24,5 +23,8 @@ class Platform
   int y;
   int nx;
   int ny;
+
+  Player player;
+  float xmove;
  
 };

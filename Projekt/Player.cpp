@@ -2,10 +2,10 @@
 Player::Player()
 {
  //Public:
- this->xpos  = 0.f;
- this->ypos  = 480.f;
- this->xmove = 0.f;
- this->ymove = 0.f;
+ xpos  = 0.f;
+ ypos  = 480.f;
+ xmove = 0.f;
+ ymove = 0.f;
  //Private:
  right = false;
  left  = false;

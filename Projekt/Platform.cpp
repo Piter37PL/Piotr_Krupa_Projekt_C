@@ -11,11 +11,13 @@ Platform::Platform(int x, int y, int nx, int ny)
   this->y=y;
   this->nx=nx;
   this->ny=ny;
+  
+  xmove = player.xpos;
 
   textureBlock.loadFromFile("Bloc1.png"); //Załadowanie tekstury
   spritePlatform.setTexture(textureBlock); //Załadowanie Sprite platformy
 
- 
+  
 }
 
 Platform::~Platform()
@@ -25,17 +27,16 @@ Platform::~Platform()
 void Platform::drawPlatform(sf::RenderWindow &window)
 {
 
- for(int i=0; i<this->nx; i++) 
+ for(int i=0; i<nx; i++) 
    {
     window.draw(spritePlatform);
-    spritePlatform.setPosition(this->x + i*this->blocX, this->y);
+    spritePlatform.setPosition(x + i*blocX, y);
    }
-
+   std::cout<<xmove<<std::endl;
 }
 
 void Platform::collisionPlatform()
 {
-
 }
 
 

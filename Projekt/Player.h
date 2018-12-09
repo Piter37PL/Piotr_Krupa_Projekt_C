@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "SFML/Graphics.hpp"
+
 // Definicje funkcji z instrukcjami dla postaci gracza
 class Player
 {
@@ -8,8 +9,6 @@ class Player
   
   Player();
   ~Player();
-  friend class Platform;
-
   float xpos;                                    //Pozycja w osi x
   float ypos;                                    //Pozycja w osi y
   float xmove;                                   //Prędkość w osi x
@@ -26,6 +25,6 @@ class Player
   float gravity;                                 //Stałe przyspieszenie grawitacyjne do skoku
   
   int jump_counter;
-
+  friend class Platform;
   
 };
