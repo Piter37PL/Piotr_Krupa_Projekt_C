@@ -5,7 +5,7 @@
 2.W przypadku wykonania punktu 1, wprowadzić własne pomysły (np. zagadki logiczne powiązane z tematyką kierunku - między innymi fizyka).
 
 ### Narzędzia
-1. C/C++ (Code::Blocks)
+1. C/C++ (Code::Blocks)  // ZMIENIONE na UBUNTU
 2. biblioteka SFML
 
 ### Cel:
