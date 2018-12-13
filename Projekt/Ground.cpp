@@ -21,7 +21,7 @@ void Ground::drawGround(sf::RenderWindow &window)
  int yoffset[] = {30,60};
  for( int j=0; j<2; j++)
     {
-      for(int i=0; i<=20; i++)
+      for(int i=0; i<=480; i++)
          {
            window.draw(spriteGround);
            spriteGround.setPosition(i*this->blocX,this->rosyG-yoffset[j]);
@@ -29,3 +29,12 @@ void Ground::drawGround(sf::RenderWindow &window)
     }
 
 }
+
+
+int Ground::GetYMin()
+{
+  return 480;
+} 
+
+
+

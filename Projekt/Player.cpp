@@ -1,4 +1,5 @@
 #include "Player.h"
+
 Player::Player()
 {
  //Public:
@@ -19,7 +20,7 @@ Player::~Player()
 }
 
 
-void Player::control(sf::RenderWindow &window)
+void Player::control()
 {
  //Czy wciśnięto / nie wciśnięto klawisz
 
@@ -48,32 +49,39 @@ void Player::control(sf::RenderWindow &window)
   Player::update(right,left,jump);
 }
 
-
 void Player::update(bool right, bool left, bool jump)
 { 
   //Ruch jednostajny postaci lewo/prawo
-  if(right) xmove =  0.5; 
-  if(left)  xmove = -0.5; 
+  if(right) xmove =  0.75; 
+  if(left)  xmove = -0.75; 
   if(!(right || left)) xmove = 0;
   xpos += xmove;
   
   //Skok postaci   
-  if(jump){ ymove = 5.0f; jump=false; }
-  else if(!jump) ymove = -5.0f;
+  if(jump){ ymove = 10.5f; jump=false; }
+  else if(!jump) ymove = -10.5f;
   ypos -= ymove*gravity;
-   
-  //Pseudokolizja z lewą krawędzią ekranu
-  if(xpos < 0.f)
-    {
-      xmove = 0.f;
-      xpos = 0.f;
-    }
-  //Pseudokolizja z 'ziemią' 
-  if(ypos > 480.f)
-    {
-      ymove = 0.f;
-      ypos = 480.f;
-    }
+}
+
+float Player::GetPosX()
+{
+  return this->xpos;
+}
+
+float Player::GetPosY()
+{
+  return this->ypos;
+}
+  
+
+void Player::SetPosX(float X)
+{
+  this->xpos = X;
+}  
+
+void Player::SetPosY(float Y)
+{
+ this->ypos  = Y;
 }
 
 

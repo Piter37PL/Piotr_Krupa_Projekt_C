@@ -1,16 +1,19 @@
 #pragma once
 #include "SFML/Graphics.hpp"
 #include <iostream>
-#include "Player.h"
 class Platform
 {
  public:
   Platform(int x, int y, int nx, int ny);
   ~Platform();
 
-
   void drawPlatform(sf::RenderWindow &window);    //Metoda rysująca platformy - testowa
-  void collisionPlatform();
+  
+  int GetX();                                     //Pobieranie wartości x
+  int GetY();                                     //Pobieranie wartości y
+  int GetNX();                                    //Pobieranie wartości nx
+  int GetNY();                                    //Pobieranie wartości ny
+  int GetBlocX();                                 //Pobierania wartości blocX
 
  private:
   sf::Texture textureBlock;                       //Tekstura bloczku platformy
@@ -19,12 +22,10 @@ class Platform
   int rosyB;                                      //rozmiar ekranu oś y
   int blocX;                                      //rozmiar bloczka oś x
   int blocY;                                      //rozmiar bloczka oś y
-  int x;
-  int y;
-  int nx;
-  int ny;
+  int x;                                          //współrzędna x pierwszego bloczka
+  int y;                                          //współrzędna y pierwszeho bloczka
+  int nx;                                         //ile ma rysować bloczków w osi x
+  int ny;                                         //ile ma rysować bloczków w osi y
 
-  Player player;
-  float xmove;
  
 };
